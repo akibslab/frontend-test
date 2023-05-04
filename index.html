@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+
+  <!-- Site Title -->
+  <title>VISIE - Front End</title>
+
+  <!-- Favicon -->
+  <link rel="website icon" type="png" href="./assets/img/logo/favicon.png" />
+
+  <!-- CSS	   ============================================ -->
+  <!-- Bootstrap.css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-5.2.2.min.css" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+
+  <!-- Nice Select -->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+
+  <!-- owlCarousel -->
+  <link rel="stylesheet" href="assets/css/owl.carousel-2.3.4.min.css" />
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Responsive.css -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+</head>
+
+<body>
+  <!-- start: Header Area -->
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header_wrapper d-flex align-items-center flex-wrap">
+            <div class="site_logo">
+              <a href="index.html"><img src="./assets/img/logo/logo.png" alt="Logo"></a>
+            </div>
+            <div class="header_search">
+              <form action="#">
+                <button type="submit"><img src="./assets/img/icons/search.png" alt="search"></button>
+                <input type="search" name="search" id="search" placeholder="Search for professionals and agencies">
+              </form>
+            </div>
+            <div class="header_right d-none">
+              <a href="#" class="btn text-btn" id="people">People</a>
+              <a href="#" class="btn text-btn" id="agencies">Agencies</a>
+              <a href="#" class="btn text-btn" id="login">Log in</a>
+              <a href="#" class="btn" id="join-directory">Join Directory</a>
+            </div>
+            <div class="header_right">
+              <a href="#" class="btn text-btn" id="people">People</a>
+              <a href="#" class="btn text-btn" id="agencies">Agencies</a>
+              <a href="#" class="btn header-user" id="user"><img src="./assets/img/users/header-user.png" alt=""></a>
+              <a href="#" class="btn" id="upload">Upload</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end: Header Area -->
+
+  <!-- start: Page Header -->
+  <section class="page-header" id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="page_heading_title">
+            <h1>People</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end: Page Header -->
+
+  <!-- start: Main Content -->
+  <section class="main-content" id="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="main_content_wrap">
+            <aside class="filter_area">
+              <div class="filter_title">
+                <h6>Filter</h6>
+              </div>
+
+              <!-- Profession -->
+              <div class="select_filter filter_box">
+                <label for="Profession">Profession</label>
+                <select name="Profession" id="Profession">
+                  <option value="Photographer">Photographer</option>
+                  <option value="Developer">Developer</option>
+                  <option value="Designer">Designer</option>
+                </select>
+              </div>
+
+              <!-- location -->
+              <div class="select_filter filter_box">
+                <label for="Location">Location</label>
+                <select name="Location" id="Location">
+                  <option value="Sydney">Sydney</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                </select>
+              </div>
+
+              <!-- Specialism -->
+              <div class="filter_box tags_filter">
+                <span class="label">Specialism</span>
+                <div class="tags">
+                  <a href="#">Advertising</a>
+                  <a href="#">Cars</a>
+                  <a href="#">Celebrity</a>
+                  <a href="#">Ecommerce</a>
+                  <a href="#">Fashion</a>
+                  <a href="#">Food / Beverage</a>
+                  <a href="#">Interiors</a>
+                  <a href="#">Journalism</a>
+                  <a href="#">Portraits</a>
+                  <a href="#">Product</a>
+                  <a href="#">Travel</a>
+                </div>
+              </div>
+
+              <!-- Agency -->
+              <div class="filter_box tags_filter">
+                <span class="label">Agency</span>
+                <div class="tags">
+                  <a href="#">Art Box Black</a>
+                  <a href="#">B&A</a>
+                  <a href="#">DLM</a>
+                  <a href="#">Hart & Co</a>
+                  <a href="#">M.A.P</a>
+                  <a href="#">The Artist Group</a>
+                  <a href="#">The Kitchen Creative</a>
+                  <a href="#">Union Creative</a>
+                  <a href="#">Vivien’s Creative</a>
+                  <a href="#">Vivien’s Creative</a>
+                </div>
+              </div>
+
+              <!-- reset filters -->
+              <div class="reset_filter">
+                <a href="#"><img src="./assets/img/icons/reset.png" alt="">Reset all filters</a>
+              </div>
+            </aside>
+            <!-- end filter area -->
+
+            <div class="content_area">
+              <!-- content heading -->
+              <div class="content_heading">
+                <div class="search_by">
+                  <form action="#">
+                    <button type="submit"><i class="far fa-search"></i></button>
+                    <input type="search" name="searchBy" id="searchBy" placeholder="Search by name">
+                  </form>
+                </div>
+                <div class="view_by">
+                  <span class="label">View by</span>
+
+                  <ul class="view_tab" id="viewTab" role="tablist">
+                    <li class="item list_view active" data-bs-toggle="tab" data-bs-target="#list" role="tab">
+                      <i class="fal fa-list"></i>List
+                    </li>
+                    <li class="item list_view" data-bs-toggle="tab" data-bs-target="#grid" role="tab">
+                      <i class="fal fa-grip-horizontal"></i>Grid
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- tab content -->
+              <div class="tab-content" id="viewTab">
+                <!-- list view -->
+                <div class="tab-pane fade show active" id="list" role="tabpanel">
+                  <!-- peoples -->
+                  <div class="peoples">
+
+                    <div class="single_people">
+                      <div class="people_image">
+                        <div class="people_carousel owl-carousel">
+                          <img src="./assets/img/people/1.png" alt="">
+                          <img src="./assets/img/people/2.png" alt="">
+                          <img src="./assets/img/people/3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="people_content">
+                        <div class="people_name">
+                          <h4 class="name">Georges Antoni</h4>
+                          <span class="profession">Photographer</span>
+                        </div>
+                        <div class="people_meta_info">
+                          <div class="location_agency">
+                            <span class="location">Sydney</span>
+                            <span class="agency">The Artist Group</span>
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
+                                alt=""> Add to Collection</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="single_people">
+                      <div class="people_image">
+                        <div class="people_carousel owl-carousel">
+                          <img src="./assets/img/people/2.png" alt="">
+                          <img src="./assets/img/people/3.png" alt="">
+                          <img src="./assets/img/people/4.png" alt="">
+                        </div>
+                      </div>
+                      <div class="people_content">
+                        <div class="people_name">
+                          <h4 class="name">Levon Baird</h4>
+                          <span class="profession">Photographer</span>
+                        </div>
+                        <div class="people_meta_info">
+                          <div class="location_agency">
+                            <span class="location">Sydney</span>
+                            <span class="agency">The Artist Group</span>
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
+                                alt=""> Add to Collection</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="single_people">
+                      <div class="people_image">
+                        <div class="people_carousel owl-carousel">
+                          <img src="./assets/img/people/3.png" alt="">
+                          <img src="./assets/img/people/4.png" alt="">
+                          <img src="./assets/img/people/5.png" alt="">
+                        </div>
+                      </div>
+                      <div class="people_content">
+                        <div class="people_name">
+                          <h4 class="name">Nicole Bentley</h4>
+                          <span class="profession">Photographer</span>
+                        </div>
+                        <div class="people_meta_info">
+                          <div class="location_agency">
+                            <span class="location">Sydney</span>
+                            <span class="agency">M.A.P.</span>
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
+                                alt=""> Add to Collection</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="single_people">
+                      <div class="people_image">
+                        <div class="people_carousel owl-carousel">
+                          <img src="./assets/img/people/4.png" alt="">
+                          <img src="./assets/img/people/5.png" alt="">
+                          <img src="./assets/img/people/6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="people_content">
+                        <div class="people_name">
+                          <h4 class="name">Tim Swallow</h4>
+                          <span class="profession">Photographer</span>
+                        </div>
+                        <div class="people_meta_info">
+                          <div class="location_agency">
+                            <span class="location">Sydney</span>
+                            <span class="agency">The Kitchen Creative</span>
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
+                                alt=""> Add to Collection</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="single_people">
+                      <div class="people_image">
+                        <div class="people_carousel owl-carousel">
+                          <img src="./assets/img/people/5.png" alt="">
+                          <img src="./assets/img/people/6.png" alt="">
+                          <img src="./assets/img/people/1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="people_content">
+                        <div class="people_name">
+                          <h4 class="name">Grant Harvey</h4>
+                          <span class="profession">Photographer</span>
+                        </div>
+                        <div class="people_meta_info">
+                          <div class="location_agency">
+                            <span class="location">Sydney</span>
+                            <span class="agency">Union Creative</span>
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
+                                alt=""> Add to Collection</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="single_people">
+                      <div class="people_image">
+                        <div class="people_carousel owl-carousel">
+                          <img src="./assets/img/people/6.png" alt="">
+                          <img src="./assets/img/people/1.png" alt="">
+                          <img src="./assets/img/people/2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="people_content">
+                        <div class="people_name">
+                          <h4 class="name">Anna Pagossova</h4>
+                          <span class="profession">Photographer</span>
+                        </div>
+                        <div class="people_meta_info">
+                          <div class="location_agency">
+                            <span class="location">Sydney</span>
+                            <span class="agency">B&A</span>
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
+                                alt=""> Add to Collection</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- grid view -->
+                <div class="tab-pane fade" id="grid" role="tabpanel">
+                  <div class="peoples">
+
+                    <div class="single_people">
+                      <div class="people_image">
+                        <div class="people_carousel owl-carousel">
+                          <img src="./assets/img/people/1.png" alt="">
+                          <img src="./assets/img/people/2.png" alt="">
+                          <img src="./assets/img/people/3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="people_content">
+                        <div class="people_name">
+                          <h4 class="name">Georges Antoni</h4>
+                          <span class="profession">Photographer</span>
+                        </div>
+                        <div class="people_meta_info">
+                          <div class="location_agency">
+                            <span class="location">Sydney</span>
+                            <span class="agency">The Artist Group</span>
+                          </div>
+                          <div class="buttons">
+                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
+                                alt=""> Add to Collection</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pagination -->
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end: Main Content -->
+
+
+
+  <!-- JS
+      ============================================ -->
+  <!-- Jquery js -->
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle-5.2.2.min.js"></script>
+
+  <!-- NiceSelect -->
+  <script src="assets/js/nice-select.min.js"></script>
+
+  <!-- owlCarousel -->
+  <script src="assets/js/owl.carousel-2.3.4.min.js"></script>
+
+  <!-- Main -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
