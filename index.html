@@ -51,7 +51,10 @@
                 <input type="search" name="search" id="search" placeholder="Search for professionals and agencies">
               </form>
             </div>
-            <div class="header_right">
+            <div class="mobile_menu_bar d-md-none">
+              <a href="javascript:void(0)"><img src="./assets/img/icons/menu-bar.png" alt=""></a>
+            </div>
+            <div class="header_right d-none d-md-flex">
               <a href="#" class="btn text-btn" id="people">People</a>
               <a href="#" class="btn text-btn" id="agencies">Agencies</a>
               <a href="#" class="btn text-btn" id="login">Log in</a>
@@ -68,6 +71,19 @@
       </div>
     </div>
   </header>
+  <div class="side_menu">
+    <div class="mobile_menu_top">
+      <a href="javascript:void(0)" class="close"><img src="./assets/img/icons/close.png" alt=""></a>
+    </div>
+    <div class="mobile_menu">
+      <ul>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Agencies</a></li>
+        <li><a href="#">Log in</a></li>
+      </ul>
+      <a href="#" class="btn" id="join-directory">Join Directory</a>
+    </div>
+  </div>
   <!-- end: Header Area -->
 
   <!-- start: Page Header -->
@@ -90,7 +106,7 @@
       <div class="row">
         <div class="col">
           <div class="main_content_wrap">
-            <aside class="filter_area">
+            <aside class="filter_area d-none d-lg-block">
               <div class="filter_title">
                 <h6>Filter</h6>
               </div>
@@ -166,7 +182,10 @@
                     <input type="search" name="searchBy" id="searchBy" placeholder="Search by name">
                   </form>
                 </div>
-                <div class="view_by">
+                <div class="filter_icon d-md-none">
+                  <a href="#"><img src="./assets/img/icons/filter_icon.png" alt=""></a>
+                </div>
+                <div class="view_by d-none d-md-flex">
                   <span class="label">View by</span>
 
                   <ul class="view_tab" id="viewTab" role="tablist">
@@ -182,6 +201,10 @@
 
               <!-- tab content -->
               <div class="tab-content" id="viewTab">
+
+                <div class="filter_tag d-md-none">
+                  <a href="#"><img src="./assets/img/icons/close.png" alt=""> Photographer</a>
+                </div>
                 <!-- list view -->
                 <div class="tab-pane fade show active" id="list" role="tabpanel">
                   <!-- peoples -->
@@ -196,20 +219,21 @@
                         </div>
                       </div>
                       <div class="people_content">
-                        <div class="people_name">
-                          <h4 class="name">Georges Antoni</h4>
-                          <span class="profession">Photographer</span>
-                        </div>
                         <div class="people_meta_info">
+                          <div class="people_name">
+                            <h4 class="name"><a href="#">Georges Antoni</a></h4>
+                            <a href="#"><span class="profession">Photographer</span></a>
+                          </div>
                           <div class="location_agency">
                             <span class="location">Sydney</span>
                             <span class="agency">The Artist Group</span>
                           </div>
-                          <div class="buttons">
-                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
-                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
-                                alt=""> Add to Collection</a>
-                          </div>
+                        </div>
+
+                        <div class="buttons">
+                          <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                          <a href="#" class="btn btn-inline collection" id="collection"><img
+                              src="./assets/img/icons/star.png" alt=""> Add<span> to Collection</span></a>
                         </div>
                       </div>
                     </div>
@@ -223,20 +247,20 @@
                         </div>
                       </div>
                       <div class="people_content">
-                        <div class="people_name">
-                          <h4 class="name">Levon Baird</h4>
-                          <span class="profession">Photographer</span>
-                        </div>
                         <div class="people_meta_info">
+                          <div class="people_name">
+                            <h4 class="name"><a href="#">Levon Baird</a></h4>
+                            <a href="#"><span class="profession">Photographer</span></a>
+                          </div>
                           <div class="location_agency">
                             <span class="location">Sydney</span>
                             <span class="agency">The Artist Group</span>
                           </div>
-                          <div class="buttons">
-                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
-                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
-                                alt=""> Add to Collection</a>
-                          </div>
+                        </div>
+                        <div class="buttons">
+                          <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                          <a href="#" class="btn btn-inline collection" id="collection"><img
+                              src="./assets/img/icons/star.png" alt=""> Add<span> to Collection</span></a>
                         </div>
                       </div>
                     </div>
@@ -250,20 +274,20 @@
                         </div>
                       </div>
                       <div class="people_content">
-                        <div class="people_name">
-                          <h4 class="name">Nicole Bentley</h4>
-                          <span class="profession">Photographer</span>
-                        </div>
                         <div class="people_meta_info">
+                          <div class="people_name">
+                            <h4 class="name"><a href="#">Nicole Bentley</a></h4>
+                            <a href="#"><span class="profession">Photographer</span></a>
+                          </div>
                           <div class="location_agency">
                             <span class="location">Sydney</span>
                             <span class="agency">M.A.P.</span>
                           </div>
-                          <div class="buttons">
-                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
-                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
-                                alt=""> Add to Collection</a>
-                          </div>
+                        </div>
+                        <div class="buttons">
+                          <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                          <a href="#" class="btn btn-inline collection" id="collection"><img
+                              src="./assets/img/icons/star.png" alt=""> Add<span> to Collection</span></a>
                         </div>
                       </div>
                     </div>
@@ -277,20 +301,20 @@
                         </div>
                       </div>
                       <div class="people_content">
-                        <div class="people_name">
-                          <h4 class="name">Tim Swallow</h4>
-                          <span class="profession">Photographer</span>
-                        </div>
                         <div class="people_meta_info">
+                          <div class="people_name">
+                            <h4 class="name"><a href="#">Tim Swallow</a></h4>
+                            <a href="#"><span class="profession">Photographer</span></a>
+                          </div>
                           <div class="location_agency">
                             <span class="location">Sydney</span>
                             <span class="agency">The Kitchen Creative</span>
                           </div>
-                          <div class="buttons">
-                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
-                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
-                                alt=""> Add to Collection</a>
-                          </div>
+                        </div>
+                        <div class="buttons">
+                          <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                          <a href="#" class="btn btn-inline collection" id="collection"><img
+                              src="./assets/img/icons/star.png" alt=""> Add<span> to Collection</span></a>
                         </div>
                       </div>
                     </div>
@@ -304,20 +328,20 @@
                         </div>
                       </div>
                       <div class="people_content">
-                        <div class="people_name">
-                          <h4 class="name">Grant Harvey</h4>
-                          <span class="profession">Photographer</span>
-                        </div>
                         <div class="people_meta_info">
+                          <div class="people_name">
+                            <h4 class="name"><a href="#">Grant Harvey</a></h4>
+                            <a href="#"><span class="profession">Photographer</span></a>
+                          </div>
                           <div class="location_agency">
                             <span class="location">Sydney</span>
                             <span class="agency">Union Creative</span>
                           </div>
-                          <div class="buttons">
-                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
-                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
-                                alt=""> Add to Collection</a>
-                          </div>
+                        </div>
+                        <div class="buttons">
+                          <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                          <a href="#" class="btn btn-inline collection" id="collection"><img
+                              src="./assets/img/icons/star.png" alt=""> Add<span> to Collection</span></a>
                         </div>
                       </div>
                     </div>
@@ -331,20 +355,20 @@
                         </div>
                       </div>
                       <div class="people_content">
-                        <div class="people_name">
-                          <h4 class="name">Anna Pagossova</h4>
-                          <span class="profession">Photographer</span>
-                        </div>
                         <div class="people_meta_info">
+                          <div class="people_name">
+                            <h4 class="name"><a href="#">Anna Pagossova</a></h4>
+                            <a href="#"><span class="profession">Photographer</span></a>
+                          </div>
                           <div class="location_agency">
                             <span class="location">Sydney</span>
                             <span class="agency">B&A</span>
                           </div>
-                          <div class="buttons">
-                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
-                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
-                                alt=""> Add to Collection</a>
-                          </div>
+                        </div>
+                        <div class="buttons">
+                          <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                          <a href="#" class="btn btn-inline collection" id="collection"><img
+                              src="./assets/img/icons/star.png" alt=""> Add<span> to Collection</span></a>
                         </div>
                       </div>
                     </div>
@@ -365,20 +389,20 @@
                         </div>
                       </div>
                       <div class="people_content">
-                        <div class="people_name">
-                          <h4 class="name">Georges Antoni</h4>
-                          <span class="profession">Photographer</span>
-                        </div>
                         <div class="people_meta_info">
+                          <div class="people_name">
+                            <h4 class="name"><a href="#">Georges Antoni</a></h4>
+                            <a href="#"><span class="profession">Photographer</span></a>
+                          </div>
                           <div class="location_agency">
                             <span class="location">Sydney</span>
                             <span class="agency">The Artist Group</span>
                           </div>
-                          <div class="buttons">
-                            <a href="#" class="btn btn-inline" id="profile">Profile</a>
-                            <a href="#" class="btn btn-inline" id="collection"><img src="./assets/img/icons/star.png"
-                                alt=""> Add to Collection</a>
-                          </div>
+                        </div>
+                        <div class="buttons">
+                          <a href="#" class="btn btn-inline" id="profile">Profile</a>
+                          <a href="#" class="btn btn-inline collection" id="collection"><img
+                              src="./assets/img/icons/star.png" alt=""> Add<span> to Collection</span></a>
                         </div>
                       </div>
                     </div>
@@ -415,7 +439,7 @@
               <p>Join our directory. Show off your work. Land a new gig.</p>
             </div>
             <div class="cta_button">
-              <a href="#" class="btn">Join Directory - it’s free</a>
+              <a href="#" class="btn">Join Directory <span>- it’s free</span></a>
             </div>
           </div>
         </div>
@@ -475,7 +499,9 @@
                 <div class="menu">
                   <ul>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Call Sheets</a></li>
+                    <li class="d-none d-md-block"><a href="#">Call Sheets</a></li>
+                    <li class="d-md-none"><a href="#">Press</a></li>
+                    <li class="d-md-none"><a href="#">Visie Call Sheets</a><span class="beta">Beta</span></li>
                   </ul>
                 </div>
               </div>

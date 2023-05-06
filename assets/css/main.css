@@ -2,9 +2,10 @@
 -----------------------------------
 1. Theme default css
 2. Header Area
-3. Off Canvas Menu
-4. Mobile Menu Area
-5. Hero Area
+3. Page Header
+4. Main Content
+5. CTA Section
+6. Footer Area
 */
 
 /* Theme Default CSS
@@ -203,14 +204,12 @@ label {
 .btn.btn-inline {
 	background: transparent;
 	color: var(--color-black);
-	display: inline-flex;
-	align-items: center;
 }
 .btn.btn-inline img {
 	width: 13px;
 	height: auto;
 	margin-right: 9px;
-	margin-top: -5px;
+	margin-top: -3px;
 }
 .btn.text-btn {
 	background: transparent;
@@ -324,6 +323,46 @@ textarea:focus {
 	width: 1px;
 	height: 13px;
 	background-color: var(--color-black);
+}
+.side_menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 220px;
+	background-color: var(--color-white);
+	padding: 30px 20px 15px 20px;
+	border-radius: 0 10px 10px 0;
+	z-index: 99;
+	transform: translateX(100%);
+	visibility: hidden;
+	transition: all 0.3s ease-in-out 0s;
+}
+.side_menu.open {
+	visibility: visible;
+	transform: translateX(0);
+}
+.side_menu .mobile_menu_top a {
+	width: 20px;
+	display: inline-block;
+	height: 20px;
+	border-radius: 50%;
+}
+.side_menu .mobile_menu_top a img {
+	width: 100%;
+}
+.side_menu .mobile_menu_top {
+	margin-bottom: 20px;
+}
+.side_menu .mobile_menu ul li {
+	display: block;
+	margin-bottom: 10px;
+}
+.side_menu .mobile_menu ul li > a {
+	display: block;
+	font-size: 16px;
+	line-height: 26px;
+	color: var(--color-black);
+	font-weight: 500;
 }
 /* end: Header Area */
 
@@ -465,7 +504,8 @@ textarea:focus {
 .main_content_wrap .filter_area .filter_box:not(:nth-last-child(2)) {
 	margin-bottom: 40px;
 }
-.tags_filter .tags a {
+.tags_filter .tags a,
+.filter_tag a {
 	display: inline-block;
 	font-size: 16px;
 	line-height: 26px;
@@ -477,7 +517,14 @@ textarea:focus {
 	margin: 0 10px 10px 0;
 	background-color: transparent;
 }
-.tags_filter .tags {
+.filter_tag a > img {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+.tags_filter .tags,
+.filter_tag {
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: -10px;
@@ -514,8 +561,8 @@ textarea:focus {
 	width: calc(100% - 373px);
 	padding: 24px 0;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
+	align-items: end;
 }
 .single_people {
 	display: flex;
@@ -553,6 +600,9 @@ textarea:focus {
 	font-weight: 400;
 	margin-bottom: 1px;
 }
+.people_content .people_name .name a:hover {
+	color: var(--color-black);
+}
 
 .people_content .people_name span.profession {
 	display: block;
@@ -560,13 +610,13 @@ textarea:focus {
 	line-height: 18px;
 	color: rgba(0, 0, 0, 0.56);
 }
-
 .people_content .people_meta_info {
 	display: flex;
-	align-items: end;
+	flex-direction: column;
+	align-self: start;
+	height: 100%;
 	justify-content: space-between;
 }
-
 .people_content .people_meta_info .location_agency span {
 	display: inline-block;
 	font-size: 13px;
@@ -694,6 +744,7 @@ textarea:focus {
 	display: flex;
 	align-items: start;
 	justify-content: end;
+	flex-wrap: wrap;
 }
 .footer_top .footer_menu_boxes .single_menu_box {
 	max-width: 135px;
@@ -712,7 +763,21 @@ textarea:focus {
 	margin-bottom: 10px;
 }
 .footer_menu_boxes .single_menu_box .menu ul li {
+	position: relative;
 	display: block;
+}
+.footer_menu_boxes .single_menu_box .menu ul li .beta {
+	background-color: var(--color-white);
+	color: var(--color-black);
+	font-size: 13px;
+	line-height: 23px;
+	padding: 0 6px;
+	display: inline-block;
+	border-radius: 40px;
+	position: absolute;
+	right: -11px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .footer_menu_boxes .single_menu_box .menu ul li a {
 	display: block;
